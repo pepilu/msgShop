@@ -1,0 +1,67 @@
+/* ********** TABLET MODE ********** */
+
+@media only screen and (min-device-width:400px) and (max-device-width:800px) {
+    header {
+      padding: 2em 1em;
+    }
+  
+    .logo img{
+      width: 100%;
+    }
+  
+    .menu-items{
+      position:absolute;
+      right: 0;
+      top: 100px;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+  
+    .menu-hidden{
+      display: none;
+    }
+  
+    .menu-visible{
+      display: flex;
+    }
+  
+    .menu-items li {
+      margin: 0.5em;
+      padding: 5px 10px;
+    }
+    
+    .lines{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .intro{
+      width: 80%;
+    }
+  
+    .sectionDesc {
+      padding: 0% 10%;
+    }
+  
+    .servItems {
+      grid-template-columns: 40% 40%;
+    }
+  
+    #storeItems {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 40% 40%;
+    }
+  }
+  
+  /* ********** FIXED STORE MODE ********** */
+  
+  @media only screen and (max-device-width:550px){
+    #storeItems {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 80%;
+    }
+  }
